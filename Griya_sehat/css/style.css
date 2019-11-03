@@ -1,8 +1,17 @@
 header{
-    box-shadow: 0 0px 8px grey;
+    box-shadow: 0 0px 5px grey;
     position: fixed;
     width: 100%;
     z-index: 100;
+    background-color: white;
+}
+
+main{
+    padding-top: 58.25px;
+}
+
+#layanan{
+    background-color: #F6F9FB;
 }
 
 .affix{
@@ -16,9 +25,7 @@ body{
 }
 
 .change-color:hover{
-    background-color: #009B4C !important;
-    color: white !important;
-    border-radius: 10px;
+    color: #E62129 !important;
 }
 
 .width{
@@ -45,8 +52,12 @@ body{
 }
 
 footer{
-    background-color: #009B4C;
-    color: white;
+    background-color: #F6F9FB;
+    color: black;
+}
+
+.btn-danger{
+    background-color: #E62129;
 }
 
 .center{
