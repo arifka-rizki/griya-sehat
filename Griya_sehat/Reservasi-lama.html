@@ -20,7 +20,7 @@
     <div class="container mb-5">
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow ">
             <div class="container">
-            <a class="navbar-brand " href="Home.html">
+            <a class="navbar-brand " href="Index.html">
                 <img src="img/logo.png " alt="logo icon">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mr-3">
                 <!--<li class="nav-item mr-md-2">
-                    <a class="nav-link active change-color" href="index.html">Home</a>
+                    <a class="nav-link active change-color" href="index.html">Index</a>
                 </li>-->
                 <li class="nav-item mr-md-2">
                     <a class="nav-link active change-color" href="Reservasi-awal.html">Reservasi</a>
@@ -61,17 +61,22 @@
 
                         <div class="form-group">
                                 <label for="nomorPasien">Nomor Pasien</label>
-                            <input type="text" id="nomorPasien" class="form-control" placeholder="12324">
+                            <input type="text" id="nomorPasien" class="form-control" placeholder="12324" required>
                         </div>
 
                         <div class="form-group">
                                 <label for="namaPasien">Nama Pasien</label>
-                            <input type="text" id="namaPasien" class="form-control" placeholder="Nama Lengkap">
+                            <input type="text" id="namaPasien" class="form-control" placeholder="Nama Lengkap" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tanggallahir">Tanggal Reservasi:</label>
+                            <input type="date" class="form-control" id="tanggal-reservasi" placeholder="Tanggal reservasi" required>
                         </div>
         
                         <div class="form-group">
                             <label for="doctor">Dokter:</label>
-                            <select name="doctor" id="doctor" class="custom-select">
+                            <select name="doctor" id="doctor" class="custom-select" required>
                                 <option selected>Dokter</option>
                                 <option value="1">Dr. Ahmad Naghim</option>
                                 <option value="2">Dr. Annas Rofa'i</option>
@@ -80,7 +85,7 @@
 
                         <div class="form-group">
                                 <label for="keluhan">Keluhan</label>
-                                <textarea name="keluhan" id="keluhan" rows="3" class="form-control" placeholder="Sakit perut"></textarea>
+                                <textarea name="keluhan" id="keluhan" rows="3" class="form-control" placeholder="Sakit perut" required></textarea>
                         </div>                          
                         <button class="btn btn-lg btn-danger btn-block my-4" type="submit">Submit</button>
                         <p class=" text-center">
