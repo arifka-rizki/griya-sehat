@@ -1,0 +1,166 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+p {
+  color: #ffff;
+  font-weight: 400;
+}
+
+.box{
+  box-shadow: 0 2px 5px rgba(0,0,0,.2), 0px 0px 2px rgba(0,0,0,.2);
+  border-radius: 5%;
+  color: black;
+}
+
+.box:hover{
+  box-shadow: 0px 0px 15px rgba(0,0,0,.2), 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+div a:hover{
+  text-decoration: none !important;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 300%;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+.page-section {
+  padding: 7rem 0rem 7rem 0rem;
+}
+
+.bg-karangan {
+  background-color: #F6F9FB;
+}
+
+.navbar-brand img {
+  max-height: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-weight: 600;
+  font-size: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  font-weight: 700;
+  color: #E62129 !important;
+}
+
+.change-color:hover {
+  color: #E62129 !important;
+}
+
+header {
+  margin-top: -68px;
+  padding: 325px 0 105px;
+  background: url("../img/kehed@3x.jpg");
+  background-size: 768px;
+  background-position: center;
+  background-size: cover;
+}
+
+header .btn-get-started {
+  padding: 1.25rem 2.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5rem;
+  background-color: #E62129;
+  color: #fff;
+}
+
+header .btn-get-started:hover {
+  color: #fff;
+}
+
+hr.divider {
+  max-width: 5.25rem;
+  border-width: 0.2rem;
+  border-color: #f4623a;
+}
+
+.page-tentang img {
+  border-radius: 2rem;
+}
+
+.page-tentang p {
+  color: black;
+}
+
+.site-footer img {
+  max-height: 40px;
+}
+
+.site-footer .h5 {
+  font-weight: 700;
+}
+
+.site-footer p {
+  color: black;
+  font-size: 90%;
+}
+
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+.card-set {
+  border: 0;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0.5rem 1rem 0 #e7e7e7;
+          box-shadow: 0 0.5rem 1rem 0 #e7e7e7;
+}
+
+.card-set .card-title {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.card-set .card-body {
+  padding: 2rem;
+}
+
+.form-set {
+  width: 100%;
+}
+
+.form-set .btn {
+  font-size: 100%;
+  border-radius: 1rem;
+  letter-spacing: .1rem;
+  font-weight: 700;
+  padding: 1rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.form-label-group input {
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+/*# sourceMappingURL=main.css.map */
