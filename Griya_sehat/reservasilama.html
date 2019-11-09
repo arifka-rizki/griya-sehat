@@ -7,12 +7,11 @@
     <title>GriyaSehat BakriPS</title>
     <link
     rel="stylesheet"
-    href="css/bootstrap.css"
+    href="frontend/libraries/bootstrap/css/bootstrap.css"
     />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="shortcut icon" href="img/logo img.png" type="image/x-icon">
+    <link rel="stylesheet" href="frontend/styles/main.css" />
 </head>
 <body class=" bg-karangan">
 
@@ -20,8 +19,8 @@
     <div class="container mb-5">
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow ">
             <div class="container">
-            <a class="navbar-brand " href="Index.html">
-                <img src="img/logo.png " alt="logo icon">
+            <a class="navbar-brand " href="index.html">
+                <img src="frontend/images/logo.png " alt="logo icon">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,10 +29,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mr-3">
                 <!--<li class="nav-item mr-md-2">
-                    <a class="nav-link active change-color" href="index.html">Index</a>
+                    <a class="nav-link active change-color" href="index.html">Home</a>
                 </li>-->
                 <li class="nav-item mr-md-2">
-                    <a class="nav-link active change-color" href="Reservasi-awal.html">Reservasi</a>
+                    <a class="nav-link active change-color" href="Reservasi.html">Reservasi</a>
                 </li>
                 <li class="nav-item mr-md-2">
                     <a class="nav-link change-color" href="Blog.html">Blog</a>
@@ -57,26 +56,23 @@
                     <div class="card card-set my-5">
                     <div class="card-body">
                         <h5 class="card-title text-center">Pasien Lama</h5>
+                        <hr>
                         <form class="form-set">
 
                         <div class="form-group">
                                 <label for="nomorPasien">Nomor Pasien</label>
-                            <input type="text" id="nomorPasien" class="form-control" placeholder="12324" required>
+                            <input type="text" id="nomorPasien" class="form-control" placeholder="Ex:12324" >
                         </div>
 
                         <div class="form-group">
-                                <label for="namaPasien">Nama Pasien</label>
-                            <input type="text" id="namaPasien" class="form-control" placeholder="Nama Lengkap" required>
+                                <label for="TanggalPeriksa">Tanggal Periksa:</label>
+                                <input type="date" class="form-control" id="TanggalPeriksa" placeholder="Tanggal Lahir">
                         </div>
-
-                        <div class="form-group">
-                            <label for="tanggallahir">Tanggal Reservasi:</label>
-                            <input type="date" class="form-control" id="tanggal-reservasi" placeholder="Tanggal reservasi" required>
-                        </div>
+        
         
                         <div class="form-group">
                             <label for="doctor">Dokter:</label>
-                            <select name="doctor" id="doctor" class="custom-select" required>
+                            <select name="doctor" id="doctor" class="custom-select">
                                 <option selected>Dokter</option>
                                 <option value="1">Dr. Ahmad Naghim</option>
                                 <option value="2">Dr. Annas Rofa'i</option>
@@ -85,11 +81,23 @@
 
                         <div class="form-group">
                                 <label for="keluhan">Keluhan</label>
-                                <textarea name="keluhan" id="keluhan" rows="3" class="form-control" placeholder="Sakit perut" required></textarea>
+                                <textarea name="keluhan" id="keluhan" rows="3" class="form-control" placeholder="Keluhan pasien" ></textarea>
                         </div>                          
-                        <button class="btn btn-lg btn-danger btn-block my-4" type="submit">Submit</button>
+                        
+                        <a href="reservasi-berhasil.html" class="btn btn-lg btn-danger btn-block my-4">
+                             Submit
+                        </a>
+
+                        <!--<button class="btn btn-lg btn-danger btn-block btn-link my-4" type="submit">
+                            <a href="reservasi-berhasil.html">submit</a>
+                        </button>
+                         -->
+
                         <p class=" text-center">
-                            <a href="Reservasi-awal.html"><i class="fas fa-arrow-circle-left"></i> Kembali</a>
+                            <a href="reservasi.html">
+                                    <i class="fas fa-arrow-circle-left"></i>
+                                    Kembali
+                            </a>
                         </p>
         
                     

@@ -7,12 +7,11 @@
     <title>GriyaSehat BakriPS</title>
     <link
       rel="stylesheet"
-      href="css/bootstrap.css"
+      href="frontend/libraries/bootstrap/css/bootstrap.css"
     />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="shortcut icon" href="img/logo img.png" type="image/x-icon">
+    <link rel="stylesheet" href="frontend/styles/main.css" />
   </head>
   <body>
 
@@ -20,8 +19,8 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow">
             <div class="container">
-              <a class="navbar-brand " href="Home.html">
-                <img src="img/logo.png" alt="logo icon">
+              <a class="navbar-brand " href="index.html">
+                <img src="frontend/images/logo.png " alt="logo icon">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,7 +32,7 @@
                     <a class="nav-link active change-color" href="index.html">Home</a>
                   </li>-->
                   <li class="nav-item mr-md-2">
-                    <a class="nav-link change-color" href="Reservasi-awal.html">Reservasi</a>
+                    <a class="nav-link change-color" href="reservasi.html">Reservasi</a>
                   </li>
                   <li class="nav-item mr-md-2">
                     <a class="nav-link change-color" href="Blog.html">Blog</a>
@@ -69,7 +68,7 @@
         <div class="col"></div>
       </div>
       </div>
-      <a href="Reservasi-awal.html" class="btn btn-get-started px-5 py-2 mt-4 shadow"  >
+      <a href="reservasi.html" class="btn btn-get-started px-5 py-2 mt-4 shadow"  >
         Reservasi
       </a>
     </header>
@@ -80,57 +79,48 @@
       <h2 class="text-center mt-0" >Layanan Kami</h2>
       <hr class="divider my-4">
       <div class="row">
-
-        <div class="col-lg-3 col-md-6 text-center">
-          <a href="Reservasi-awal.html">
-            <div class="mt-5 box py-3">
-              <div>
-                <img class="w-50" src="img/reg.png" alt="reservasi">
-              </div>
-              <h3 class="mt-4 mb-2">Reservasi</h3>
-              <p class="text-muted mb-0">membantumu untuk mendaftarakan diri</p>
-            </div>
-          </a>          
-        </div>
-
         
         <div class="col-lg-3 col-md-6 text-center">
-          <a href="Blog.html">
-              <div class="mt-5 box py-3">
-                <div>
-                  <img class="w-50" src="img/blog.png" alt="blog">
-                </div>
-                <h3 class="mt-4 mb-2">Blog</h3>
-                <p class="text-muted mb-0">menambah ilmu tentang terapi kesehatan</p>
-              </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-6 text-center">
-            <a href="Produk.html">
-              <div class="mt-5 box py-3">
-                  <div>
-                    <img class=" w-50" src="img/produk.png" alt="produk">
-                  </div>
-                  <h3 class="mt-4 mb-2">Produk</h3>
-                  <p class="text-muted mb-0">Memudahkanmu untuk memilih produk</p>
-                </div>
+          <div class="mt-5">
+            <a href="reservasi.html">
+              <img class="w-50" src="frontend/images/reg.png" alt="reservasi">
             </a>
+              <h3 class="mt-4 mb-2">Reservasi</h3>
+            <p class="text-muted mb-0">membantumu untuk mendaftarakan diri</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <a href="produk.html">
+              <img class=" w-50" src="frontend/images/produk.png" alt="produk">
+            </a>
+            <h3 class="mt-4 mb-2">Produk</h3>
+            <p class="text-muted mb-0">Memudahkanmu untuk memilih produk</p>
+          </div>
         </div>
 
         <div class="col-lg-3 col-md-6 text-center">
-          <a href="Pelatihan.html">
-              <div class="mt-5 box py-3">
-                <div>
-                  <img class="w-50" src="img/pelatihan.png" alt="rpelatihan">
-                </div>
-                <h3 class="mt-4 mb-2">Pelatihan</h3>
-                <p class="text-muted mb-0">menambah ilmu tentang terapi kesehatan</p>
-              </div>
-          </a>
+          <div class="mt-5">
+            <a href="blog.html">
+              <img class="w-50" src="frontend/images/blog.png" alt="blog">
+            </a>
+            <h3 class="mt-4 mb-2">Blog</h3>
+            <p class="text-muted mb-0">menambah ilmu tentang terapi kesehatan</p>
+          </div>
         </div>
 
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <a href="pelatihan.html">
+              <img class="w-50" src="frontend/images/pelatihan.png" alt="rpelatihan">
+            </a>
+            <h3 class="mt-4 mb-2">Pelatihan</h3>
+            <p class="text-muted mb-0">menambah ilmu tentang terapi kesehatan</p>
+          </div>
+        </div>
       </div>
+      
     </div>
   </section>
 
@@ -142,13 +132,13 @@
         
         <div class="row align-self-center">
           <div class="col-12 col-sm-12 col-md-12 col-lg-4 py-3 ">
-            <img src="img/kami.jpg" class=" w-100 img-fluid" alt="gambarsatu">
+            <img src=" frontend/images/kami.jpg" class=" w-100 img-fluid" alt="gambarsatu">
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-4 py-3 mx-auto">
-            <img src="img/kami.jpg" class=" w-100 img-fluid" alt="gambardua">
+            <img src=" frontend/images/kami.jpg" class=" w-100 img-fluid" alt="gambardua">
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-4 py-3 mx-auto">
-            <img src="img/kami.jpg" class=" w-100 img-fluid mx-auto" alt="gambartiga">
+            <img src=" frontend/images/kami.jpg" class=" w-100 img-fluid mx-auto" alt="gambartiga">
           </div>
           
         </div>
@@ -164,13 +154,13 @@
       </div>
     </section>
 
-    <!--footer-->
+    <!--foo-->
     <footer class="site-footer bg-karangan">
         <div class="container">
           <div class="row justify-content-between py-3">
               <div class="col-lg-5 col-md-7 md-0 mt-3 mb-1">
                   <a href="#">
-                    <img src="img/logo.png" alt="logo">
+                    <img src=" frontend/images/logo.png" alt="logo">
                   </a>
                 <br>
                 <p></p>
@@ -217,8 +207,8 @@
       </footer>
 
 
-    <script src="jquery/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="frontend/libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
     <!--<script src="frontend/libraries/retina/retina.min.js"></script>-->
   </body>
 </html>
