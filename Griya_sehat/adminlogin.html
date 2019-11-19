@@ -23,21 +23,21 @@
             <div class="card card-set my-5">
             <div class="card-body">
                 <h5 class="card-title text-center">Sign In</h5>
-                <form class="form-set">
+                <form class="form-set" method="POST" action="asdf.php">
                 <div class="form-label-group">
                         <label for="inputEmail">Email address</label>
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <input type="text" name="user" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                     
                 </div>
 
                 <div class="form-label-group">
                     <label for="inputPassword">Password</label>
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <input type="password" name="passw" id="inputPassword" class="form-control" placeholder="Password" required>
                 </div>
 
                 
-                <!--<button class="btn btn-lg btn-danger btn-block my-4" type="submit">Sign in</button>-->
-                <a href="dashboardadmin.html" class="btn btn-lg btn-danger btn-block my-4">Sign In</a>
+                <button class="btn btn-lg btn-danger btn-block my-4" type="submit">Sign in</button>
+                <!-- <a href="#" class="btn btn-lg btn-danger btn-block my-4">Sign In</a> -->
                 <p class=" text-center">
                     <a href="index.html">
                         <i class="fas fa-arrow-circle-left"></i>

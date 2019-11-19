@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  if($_SESSION["adminlog"]!==true){
+    header("location: index.html");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,10 +23,10 @@
 
     <!-- Page level plugin CSS-->
     <!--<link href="/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">-->
-    <link rel="stylesheet" href="/frontend/libraries/datatables/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="frontend/libraries/datatables/dataTables.bootstrap4.css">
     <!-- Custom styles for this template-->
     <!--<link href="css/sb-admin.css" rel="stylesheet">-->
-  <link rel="stylesheet" href="/frontend/styles/sb-admin.css">
+    <link rel="stylesheet" href="frontend/styles/sb-admin.css">
 
 </head>
 
@@ -53,7 +59,7 @@
     <ul class="navbar-nav  ml-auto ">
       
       <li class="nav-item ">
-        <a class="nav-link change-color text-white font-weight-bold" href="adminlogin.html">Log Out</a>
+        <a class="nav-link change-color text-white font-weight-bold" href="logout.php">Log Out</a>
       </li>
     </ul>
   </nav>
@@ -63,14 +69,14 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="dashboardadmin.html">
+        <a class="nav-link" href="dashboardadmin.php">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="tables.php">
           <i class="fas fa-fw fa-table"></i>
           <span>Tables</span></a>
       </li>
@@ -92,8 +98,21 @@
         <br>
         
         </h1>
+
+        <?php
+          if($_SESSION["reservtrue"]===true){
+            echo "ID Pasien: ", $_SESSION["idp"], "<br>";
+            echo "Nama: ", $_SESSION["namar"], "<br>";
+            echo "Jenis Kelamin: ", $_SESSION["gender"], "<br>";
+            echo "Tanggal Lahir: ", $_SESSION["tanggall"], "<br>";
+            echo "Alamat: ", $_SESSION["alamat"], "<br><br>";
+            echo "ID Reservasi: ", $_SESSION["idr"], "<br>";
+            echo "Tanggal Periksa: ", $_SESSION["tanggalp"], "<br>";
+            echo "Dokter: ", $_SESSION["dokter"], "<br>";
+          }
+        ?>
         
-      </div>
+    </div>
       <!-- /.container-fluid -->
 
       <!-- Sticky Footer -->

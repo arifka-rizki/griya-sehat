@@ -57,16 +57,16 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">Pasien Lama</h5>
                         <hr>
-                        <form class="form-set">
+                        <form class="form-set" method="POST" action="resold.php">
 
                         <div class="form-group">
                                 <label for="nomorPasien">Nomor Pasien</label>
-                            <input type="text" id="nomorPasien" class="form-control" placeholder="Ex:12324" >
+                            <input type="text" name="nomorpas" id="nomorPasien" class="form-control" placeholder="Ex:12324" >
                         </div>
 
                         <div class="form-group">
                                 <label for="TanggalPeriksa">Tanggal Periksa:</label>
-                                <input type="date" class="form-control" id="TanggalPeriksa" placeholder="Tanggal Lahir">
+                                <input type="date" name="tanggalp" class="form-control" id="TanggalPeriksa" placeholder="Tanggal Lahir">
                         </div>
         
         
@@ -74,8 +74,8 @@
                             <label for="doctor">Dokter:</label>
                             <select name="doctor" id="doctor" class="custom-select">
                                 <option selected>Dokter</option>
-                                <option value="1">Dr. Ahmad Naghim</option>
-                                <option value="2">Dr. Annas Rofa'i</option>
+                                <option value="Dr. Ahmad Naghim">Dr. Ahmad Naghim</option>
+                                <option value="Dr. Annas Rofai">Dr. Annas Rofa'i</option>
                             </select>
                         </div>
 
@@ -84,14 +84,14 @@
                                 <textarea name="keluhan" id="keluhan" rows="3" class="form-control" placeholder="Keluhan pasien" ></textarea>
                         </div>                          
                         
-                        <a href="reservasi-berhasil.html" class="btn btn-lg btn-danger btn-block my-4">
+                        <!-- <a href="reservasi-berhasil.html" class="btn btn-lg btn-danger btn-block my-4">
                              Submit
-                        </a>
+                        </a> -->
 
-                        <!--<button class="btn btn-lg btn-danger btn-block btn-link my-4" type="submit">
-                            <a href="reservasi-berhasil.html">submit</a>
+                        <button class="btn btn-lg btn-danger btn-block btn-link my-4" type="submit">
+                            <a href="#"></a>Submit</a>
                         </button>
-                         -->
+                        
 
                         <p class=" text-center">
                             <a href="reservasi.html">

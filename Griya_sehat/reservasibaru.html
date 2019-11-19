@@ -57,11 +57,11 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">Pasien Baru</h5>
                         <hr>
-                        <form class="form-set">
+                        <form class="form-set" method="post" action="resnew.php">
 
                         <div class="form-group">
                                 <label for="NamaPasien">Nama Pasien</label>
-                            <input type="text" id="NamaPasien" class="form-control" placeholder="Nama Panjang" >
+                            <input type="text" id="NamaPasien" class="form-control" name="nama-pasien" placeholder="Nama Panjang" >
                         </div>
 
                         <div class="form-group">
@@ -81,25 +81,25 @@
                         
                         <div class="form-group">
                                 <label for="TanggalLahir">Tanggal Lahir:</label>
-                                <input type="date" class="form-control" id="TanggalLahir" placeholder="Tanggal Lahir">
+                                <input type="date" class="form-control" id="TanggalLahir" name="tanggal-lahir" placeholder="Tanggal Lahir">
                         </div>
 
                         <div class="form-group">
                                 <label for="AlamatPasien">Alamat Pasien</label>
-                            <input type="text" id="AlamatPasien" class="form-control" placeholder="Alamat Pasien" >
+                            <input type="text" id="AlamatPasien" class="form-control" name="alamat-pasien" placeholder="Alamat Pasien" >
                         </div>
 
                         <div class="form-group">
                                 <label for="TanggalPeriksa">Tanggal Periksa:</label>
-                                <input type="date" class="form-control" id="TanggalPeriksa" placeholder="Tanggal Lahir">
+                                <input type="date" class="form-control" id="TanggalPeriksa" name="tanggal-periksa" placeholder="Tanggal Lahir">
                         </div>
         
                         <div class="form-group">
                             <label for="Dokter">Dokter:</label>
                             <select name="Dokter" id="Dokter" class="custom-select">
                                 <option selected>Dokter</option>
-                                <option value="1">Dr. Ahmad Naghim</option>
-                                <option value="2">Dr. Annas Rofa'i</option>
+                                <option value="Dr. Ahmad Naghim">Dr. Ahmad Naghim</option>
+                                <option value="Dr. Annas Rofai">Dr. Annas Rofai</option>
                             </select>
                         </div>
 
@@ -108,14 +108,13 @@
                                 <textarea name="Keluhan" id="Keluhan" rows="4" class="form-control" placeholder="Keluahn pasien" ></textarea>
                         </div>      
 
-                        <!--KUDU BENAKKE
+                        KUDU BENAKKE
                         <a href="reservasi-berhasil.html" class=" btn btn-lg btn-danger btn-block my-4"  >
                             <button class="btn btn-lg btn-danger btn-block my-4" type="submit">Submit</button>
-                            Submit
-                        </a> -->
-                        <a href="reservasi-berhasil.html" class="btn btn-lg btn-danger btn-block my-4">
-                                Submit
                         </a>
+                        <!-- <a href="reservasi-berhasil.html" class="btn btn-lg btn-danger btn-block my-4">
+                                Submit
+                        </a> -->
     
                            
 

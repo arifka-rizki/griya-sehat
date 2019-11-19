@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700,800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
     <link rel="stylesheet" href="frontend/styles/main.css" />
+    <script type="text/javascript" src="qr/qrcode.js"></script>
 </head>
 <body class=" bg-karangan">
 
@@ -59,20 +63,22 @@
                         <hr>
                         <form class="form-set text-center">
                         <p>
-                            Reservasi atas nama XXXX dengan nomor pasien XXXX pada tanggal dd-mm-yyyy telah berhasil. 
-                            Anda mendapat nomor antrian XX
+                            Reservasi atas nama <?php echo $_SESSION["nama"] ?> dengan nomor pasien <?php echo $_SESSION["idpasien"] ?> pada tanggal <?php echo $_SESSION["tanggal"] ?> telah berhasil. 
+                            Anda mendapat nomor antrian <?php echo $_SESSION["nomorantri"] ?>
                         </p>
                         <p>
-                            Klik tombol cetak untuk menyimpan atau mencetak bukti pendaftaran
+                            Mohon foto atau simpan QR code berikut sebagai bukti reservasi
                         </p>
+                        <div id="qrcode"></div>
+                        <script type="text/javascript">
+                        var nomorreser= document.getElementById("qrcode")
+                        new QRCode(document.getElementById("qrcode"), "<?php echo "http://localhost/Griya_sehat/cekreserv.php?idresv=", $_SESSION["idreserv"], "&idpas=", $_SESSION["idpasien"] ?>");
+                        </script>
                         <!--KUDU BENAKKE
                         <a href="reservasi-berhasil.html" class=" btn btn-lg btn-danger btn-block my-4"  >
                             <button class="btn btn-lg btn-danger btn-block my-4" type="submit">Submit</button>
                             Submit
                         </a> -->
-                        <a href="#" class="btn btn-lg btn-danger btn-block my-4">
-                                Cetak
-                        </a>
     
                         </form>
                     </div>
