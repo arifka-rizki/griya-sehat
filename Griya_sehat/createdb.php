@@ -18,6 +18,11 @@ if ($conn->query($sql) === TRUE) {
     echo "Error creating database: " . $conn->error;
 }
 
+$dbname = "Griya_Sehat";
+
+$conn->close();
+$conn = new mysqli($servername, $username, $password, $dbname);
+
 // sql to create table
 $sql = "CREATE TABLE Pasien (
     IDPasien INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
