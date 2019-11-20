@@ -124,7 +124,7 @@
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                   <tr>
-                    <?php echo implode('</th><th>', array_keys(current($datapasien))); ?></th>
+                    <th><?php echo implode('</th><th>', array_keys(current($datapasien))); ?></th>
                   </tr>
                 </thead>
                 <tbody>
