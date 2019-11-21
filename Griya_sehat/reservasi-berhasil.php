@@ -69,11 +69,12 @@ session_start();
                         <p>
                             Mohon foto atau simpan QR code berikut sebagai bukti reservasi
                         </p>
-                        <div id="qrcode"></div>
-                        <script type="text/javascript">
-                        var nomorreser= document.getElementById("qrcode")
-                        new QRCode(document.getElementById("qrcode"), "<?php echo "http://localhost/Griya_sehat/cekreserv.php?idresv=", $_SESSION["idreserv"], "&idpas=", $_SESSION["idpasien"] ?>");
-                        </script>
+                        <div id="qrcode" class="px-auto mw-100">
+                            <script type="text/javascript">
+                            var nomorreser= document.getElementById("qrcode")
+                            new QRCode(document.getElementById("qrcode"), "<?php echo "http://localhost/Griya_sehat/cekreserv.php?idresv=", $_SESSION["idreserv"], "&idpas=", $_SESSION["idpasien"] ?>");
+                            </script>
+                        </div>
                         <!--KUDU BENAKKE
                         <a href="reservasi-berhasil.html" class=" btn btn-lg btn-danger btn-block my-4"  >
                             <button class="btn btn-lg btn-danger btn-block my-4" type="submit">Submit</button>

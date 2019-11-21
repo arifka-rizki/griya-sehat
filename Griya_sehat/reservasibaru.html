@@ -62,7 +62,7 @@
 
                         <div class="form-group">
                                 <label for="NamaPasien">Nama Pasien</label>
-                            <input type="text" id="NamaPasien" class="form-control" name="nama-pasien" placeholder="Nama Panjang" >
+                            <input type="text" id="NamaPasien" class="form-control" name="nama-pasien" placeholder="Nama Panjang" required>
                         </div>
 
                         <div class="form-group">
@@ -75,30 +75,30 @@
 
                             <div class="form-check">
                                 <label class="form-check-label" for="jenis-kelaminpr">
-                                  <input type="radio" class="form-check-input" id="jenis-kelaminpr" name="jenis-kelamin" value="perempuan" checked>Perempuan
+                                  <input type="radio" class="form-check-input" id="jenis-kelaminpr" name="jenis-kelamin" value="perempuan">Perempuan
                                 </label>
                             </div>
                         </div>
                         
                         <div class="form-group">
                                 <label for="TanggalLahir">Tanggal Lahir:</label>
-                                <input type="date" class="form-control" id="TanggalLahir" name="tanggal-lahir" placeholder="Tanggal Lahir">
+                                <input type="date" class="form-control" id="TanggalLahir" name="tanggal-lahir" placeholder="Tanggal Lahir" required>
                         </div>
 
                         <div class="form-group">
                                 <label for="AlamatPasien">Alamat Pasien</label>
-                            <input type="text" id="AlamatPasien" class="form-control" name="alamat-pasien" placeholder="Alamat Pasien" >
+                            <input type="text" id="AlamatPasien" class="form-control" name="alamat-pasien" placeholder="Alamat Pasien" required>
                         </div>
 
                         <div class="form-group">
                                 <label for="TanggalPeriksa">Tanggal Periksa:</label>
-                                <input type="date" class="form-control" id="TanggalPeriksa" name="tanggal-periksa" placeholder="Tanggal Lahir">
+                                <input type="date" class="form-control" id="TanggalPeriksa" name="tanggal-periksa" placeholder="Tanggal Lahir" required>
                         </div>
         
                         <div class="form-group">
                             <label for="Dokter">Dokter:</label>
-                            <select name="Dokter" id="Dokter" class="custom-select">
-                                <option selected>Dokter</option>
+                            <select name="Dokter" id="Dokter" class="custom-select" required>
+                                <option selected disabled value="">Dokter</option>
                                 <option value="Dr. Ahmad Naghim">Dr. Ahmad Naghim</option>
                                 <option value="Dr. Annas Rofai">Dr. Annas Rofai</option>
                             </select>
@@ -106,7 +106,7 @@
 
                         <div class="form-group">
                                 <label for="Keluhan">Keluhan</label>
-                                <textarea name="Keluhan" id="Keluhan" rows="4" class="form-control" placeholder="Keluahn pasien" ></textarea>
+                                <textarea name="Keluhan" id="Keluhan" rows="4" class="form-control" placeholder="Keluahn pasien"></textarea>
                         </div>      
 
                         <a href="reservasi-berhasil.html">
