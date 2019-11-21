@@ -65,22 +65,22 @@
         <!-- Sidebar -->
         <ul class="sidebar navbar-nav">
         <li class="nav-item ">
-            <a class="nav-link" href="dashboardadmin.html">
+            <a class="nav-link" href="dashboardadmin.php">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
             </a>
         </li>
         
         <li class="nav-item">
-            <a class="nav-link" href="tables.html">
+            <a class="nav-link" href="daftarpasien.php">
             <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a>
+            <span>Daftar Pasien</span></a>
         </li>
 
         <li class="nav-item active">
-            <a class="nav-link " href="blank.html">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Page Blank</span></a>
+            <a class="nav-link " href="daftarreservasi.php">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Daftar Reservasi</span></a>
         </li>
         </ul>
 

@@ -100,15 +100,15 @@
         </li>
         
         <li class="nav-item active">
-            <a class="nav-link" href="tables.php">
+            <a class="nav-link" href="daftarpasien.php">
             <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a>
+            <span>Daftar Pasien</span></a>
         </li>
 
         <li class="nav-item ">
-            <a class="nav-link " href="blank.html">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Page Blank</span></a>
+            <a class="nav-link " href="daftarreservasi.php">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Daftar Reservasi</span></a>
         </li>
         </ul>
 
